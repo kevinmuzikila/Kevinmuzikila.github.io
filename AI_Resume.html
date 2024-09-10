@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SK Portfolio</title>
+    <link rel="icon" href="img\favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="Script.js"></script>
+</head>
+<body >
+    <div class="sect">  
+       
+        <nav class="navbar navbar-expand-lg navbar-light p-3 mb-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"
+                >Mphofela SK <i class="bi bi-person-square"></i
+              ></a>
+              <buttons
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </buttons>
+  
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                  <li class="nav-item mx-2">
+                    <a
+                      class="nav-link text-dark h5"
+                      href="https://www.facebook.com/"
+                      target="blank"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a
+                      class="nav-link text-dark h5"
+                      href="https://github.com/kevinmuzikila"
+                      target="blank"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a
+                      class="nav-link text-dark h5"
+                      href="https://www.linkedin.com/in/sekopimphofela98"
+                      target="blank"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  
+    <div class="center-proj">
+        <section class="project-card">
+            <div class="project-image-slider">
+                <div class="slider-wrapper">
+                    <img id="myImage" src="img/Screen/Screenshot (28).png" alt="Project Screenshot 1">
+                    <img id="myImage" src="img/Screen/Screenshot (29).png" alt="Project Screenshot 2">
+                    <img id="myImage" src="img/Screen/Screenshot (30).png" alt="Project Screenshot 3">
+                    <img  id="myImage" src="img/Screen/Screenshot (31).png" alt="Project Screenshot 1">
+                    <img  id="myImage" src="img/Screen/Screenshot (32).png" alt="Project Screenshot 2">
+                    <img  id="myImage" src="img/Screen/Screenshot (33).png" alt="Project Screenshot 3">
+                    <img id="myImage" src="img/Screen/Screenshot (34).png" alt="Project Screenshot 1">
+                    <img id="myImage" src="img/Screen/Screenshot (35).png" alt="Project Screenshot 2">
+                    <img id="myImage" src="img/Screen/Screenshot (30).png" alt="Project Screenshot 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="project-info">
+                <div class="project-header">
+                    <h2 class="project-title">Project Title: <span>Kazi, AI Resume Builder</span></h2>
+                </div>
+                <div class="project-content">
+                    <p class="project-overview">
+                      KaziProfile is an AI-driven resume builder designed to help users craft professional, personalized resumes quickly and efficiently. The application leverages artificial intelligence to generate content suggestions, tailor resume sections to specific job roles, and provide visually appealing resume templates.
+                    </p>
+                    <div class="project-features">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>AI-Powered Content Generation: Provides job-specific bullet points, skills, and summary suggestions for users to optimize their resumes.</li>
+                            <li>Export Options: Download resumes in PDF format or share via a direct link.</li>
+                            <li>Pagination and search functionality</li>
+                            <li>Responsive UI/UX using Tailwind CSS</li>
+                   
+                        </ul>
+                    </div>
+                    <div class="project-features">
+                      <h3>Tech Stack :</h3>
+                      <ul>
+                          <li>Front End: React.js with VITE, Tailwind CSS</li>
+                          <li>Back-End: Node.js </li>
+                          <li>Database: My SQL with Strapi </li>
+                          <li>User Auth: Clerk</li>
+                          <li>AI Intergration: Google Gemini API for content generation </li>
+                 
+                      </ul>
+                  </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/sekopidev" class="btn">View Code</a>
+                    <a href="https://creativeartsblog.com" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+  </div>
+
+</body>
+<script src="">
+
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    let currentSlide = 0;
+    
+    next.addEventListener('click', () => {
+        const slides = sliderWrapper.children.length;
+        currentSlide = (currentSlide + 1) % slides;
+        sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    });
+    
+    prev.addEventListener('click', () => {
+        const slides = sliderWrapper.children.length;
+        currentSlide = (currentSlide - 1 + slides) % slides;
+        sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    });
+    
+    </script>   
+    <script>
+        const img = document.getElementById("myImage");
+      
+        img.addEventListener("click", function () {
+          if (img.requestFullscreen) {
+            img.requestFullscreen(); // Standard method
+          } else if (img.webkitRequestFullscreen) { // For Safari
+            img.webkitRequestFullscreen();
+          } else if (img.msRequestFullscreen) { // For IE/Edge
+            img.msRequestFullscreen();
+          }
+        });
+      
+        // Optional: Add an event listener to exit fullscreen
+        document.addEventListener("fullscreenchange", function () {
+          if (!document.fullscreenElement) {
+            console.log("Exited fullscreen mode");
+          }
+        });
+      </script>
+</html>

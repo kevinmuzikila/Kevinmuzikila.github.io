@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="img\favicon-32x32.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <title>SK Portfolio</title>
+    <script src="Script.js"></script>
+  </head>
+
+    <header>
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              >Mphofela SK <i class="bi bi-person-square"></i
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-2"
+                    href="#"
+                    onclick="scrollToSect('abtSect')"
+                    >About Me</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-2"
+                    href="#"
+                    onclick="scrollToSect('skillsID')"
+                    >Skills
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-2"
+                    href="#"
+                    onclick="scrollToSect('projID')"
+                    >Projects
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link text-dark h5"
+                    href="https://www.facebook.com/"
+                    target="blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link text-dark h5"
+                    href="https://github.com/kevinmuzikila"
+                    target="blank"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link text-dark h5"
+                    href="https://www.linkedin.com/in/sekopimphofela98"
+                    target="blank"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section class="body-cont">
+      <div class="container">
+        <div class="row hero-txt justify-content-end">
+          <div class="col-md-8 text-start hero-txt">
+            <h1 class="display-6 text-light nameText">Hello! My Name is</h1>
+            <h1 class="display-2 animate-charcter">SK Mphofela</h1>
+
+            <h2 class="text-light">A SOFTWARE DEVELOPER</h2>
+            <p class="lead text-light">
+              "Welcome to the crossroads of creativity and technology. Here, I
+              craft sleek, efficient software solutions tailored to your needs,
+              transforming digital dreams into reality. Explore my work and
+              discover how innovation, precision, and passion combine to create
+              exceptional tech experiences."
+            </p>
+            <button class="btn btn-secondary mt-5" onclick="scrollToSect('contactID')">Get in touch</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Home PAGE-->
+    <section class="abt-me-sect" id="abtSect">
+      <div class="container ">
+        <p class="Abt-me-txt display-5">
+          --About Me <i class="bi bi-person-check"></i> --
+        </p>
+       
+        <button class="btn dwn-cv" id="download-btn" onclick="downloadPDF()">
+          Download Cv <i class="bi bi-box-arrow-in-down"></i>
+        </button>
+        
+        <div class="abt-bottom">
+         
+          <div class="col-md-10 col-lg-6 mt-3">
+            
+            <h4>Personal Profile</h4>
+            <p class="">Name: <i class="">Sekopi Kevin Mphofela </i></p>
+            <p class="">BirthDate: <i>1998-09-02 </i></p>
+            <p class="">Located: <i>South Africa, Gauteng </i></p>
+            <p>
+              <b>
+                Hello! I'm Sekopi Kevin Mphofela, a passionate and aspiring
+                Software Developer recently completed my National Diploma in Software Development at Tshwane University
+                of Technology (TUT). With a robust foundation in both
+                theoretical and practical aspects of software engineering, I am
+                eager to bring my problem-solving skills and technical knowledge
+                to a professional setting.</b
+              >
+            </p>
+
+            <p>
+
+            <p class="thanks">
+              <b>
+                Thank you for visiting my portfolio. Please feel free to browse
+                through my projects and reach out if you believe my skills and
+                interests align with your needs.</b
+              >
+            </p>
+          </div>
+          <div class="abt-left">
+            <img src="img\10798281_19362653 (1).jpg" alt="not-found" class="abt-img">
+            <div class="abt-left-bot">
+              <label>Front-End Dev </label>
+              <div class="progress mb-1">     
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 76%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>Back-End Dev</label>
+              <div class="progress mb-1">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>DB Dev&Management  </label>
+              <div class="progress mb-1">
+                
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>DevOps(in the process of learning) </label>
+              <div class="progress mb-1">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              Others
+              <div class="progress mb-1">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of About Me Page -->
+    <section class="skill-pge" id="skillsID">
+      <div class="container">
+        <p class="Abt-me-txt display-6">
+          --Technical Skills <i class="bi bi-pc-display"></i> --
+        </p>
+        <div class="row">
+          <div class="col-md-4 card-bord">
+            <div class="card">
+              <div class="card-header">
+                Front-End <i class="bi bi-laptop"></i>
+              </div>
+              <div class="card-body">
+                <p class="lead">HTML5 <div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">CSS3<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">JavaScript<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">Bootstrap5<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">React.JS <div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-bord">
+            <div class="card">
+              <div class="card-header">
+                Back-End <i class="bi bi-filetype-php"></i>
+              </div>
+              <div class="card-body">
+                <p class="lead">C++<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">Express.Js<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">Java<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">Node.js<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+                <p class="lead">JavaScript<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-bord">
+            <div class="card">
+              <div class="card-header">
+                Database <i class="bi bi-database-fill-lock"></i>
+              </div>
+              <div class="card-body">
+                <p class="lead">MYSQL<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+
+                <p class="lead">MongoDB<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+
+                <p class="lead">PL/SQL<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+
+                <p class="lead">PostgreSQL<div class="progress mb-1">
+                  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></p>
+             
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-bord mb-5">
+            <div class="card">
+              <div class="card-header">
+                Other Skills <i class="bi bi-database-fill-lock"></i>
+              </div>
+              <div class="card-body">
+                <p class="lead">GIT Version Control</p>
+                <p class="lead">REST,JSON API</p>
+                <p class="lead">AWS</p>
+                <p class="lead">VS Code</p>
+                <p class="lead">Docker</p>
+                <p class="lead">Linux OS</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--pROJECT SECTION BEGINS HERE-->
+    <section class="proj-page" id="projID">
+      <div class="container proj-pag">
+        <p class="Abt-me-txt display-6">
+          --Projects <i class="bi bi-pc-display"></i> --
+        </p>
+        <div class="video-cont mb-3">
+          <div class="mt-2">
+            <h4><a class="project-links" href="AI_Resume.html">AI Resume Builder preview <i class="bi bi-link"></i> </a></h4>
+          <div class="vid-dis ">
+            
+            <iframe width="100%" height="90%" src="img/0910.mp4" title="URL Shortner" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="vid-link">
+              
+                <a href="#"> Demo <i class="fa fa-facebook"></i></a>
+              
+                <a href="#"> Code <i class="fa fa-twitter"></i></a>
+          </div>
+          </div>
+          </div>
+
+          <div class="mt-5">
+            <h4><a class="project-links" href="TechBlog.html">My Tech Blogging preview <i class="bi bi-link"></i></a></h4>
+          <div class="vid-dis ">
+            
+            <iframe width="100%" height="90%" src="img/0910(1).mp4" title="URL Shortner" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="vid-link">
+              
+                <a href="#"> Demo <i class="fa fa-facebook"></i></a>
+              
+                <a href="#"> Code <i class="fa fa-twitter"></i></a>
+          </div>
+          </div>
+          </div>
+          
+          
+         <div class="mt-5 mb-5">
+          <h4 class=""><a class="project-links" href="url.html">URL Shortner Preview <i class="bi bi-link"></i> </a> </h4>
+          <div class="vid-dis">
+           
+            <iframe width="100%" height="90%" src="img/0905 (1)(1).mp4" title="Url Shortner Preview" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="vid-link">
+             
+                <a href="#"> Demo <i class="fa fa-facebook"></i></a>
+              
+              
+                <a href="#"> Code <i class="fa fa-twitter"></i></a>
+              
+            </div>
+          </div>
+         </div>
+         </div>
+        <div class="row align-items-center justify-content-center">
+       
+         
+       
+      </div>
+      <div class="end-of-line">------</div>
+    </section>
+    <!--Contact Page Begins HERE -->
+    <section class="cnt-page" id="contactID">
+      <div class="contact-page">
+        <section class="contact-details">
+          <h1 class="cont-txt">--Contact Me--</h1>
+          <p>If you have any questions or just want to get in touch, feel free to reach out!</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+27 66 421 1733</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+27 69 289 2431</span>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>Kevinmphofela@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>123 Buffalo Street, Boksburg, Gauteng, South Africa</span>
+            </div>
+          </div>
+        </section>
+      
+        <section class="contact-form" >
+          <h2>Send Me a Message</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </section>
+      </div>
+      
+    </section>
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#abtSect" class="text-light">About Me</a></li>
+              <li><a href="#skillsID" class="text-light">Skills</a></li>
+              <li><a href="#projID" class="text-light">Projects</a></li>
+              <li><a href="#contactID" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Me</h5>
+            <ul class="list-unstyled d-flex">
+              <li><a href="https://www.facebook.com/" target="_blank" class="text-light me-3"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://github.com/kevinmuzikila" target="_blank" class="text-light me-3"><i class="bi bi-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sekopimphofela98" target="_blank" class="text-light me-3"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <h5>Contact Information</h5>
+            <p>Email: kevinmphofela@gmail.com</p>
+            <p>Phone: +27 66 421 1733</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2024 Sekopi Kevin Mphofela. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
